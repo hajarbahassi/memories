@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYAD AUTO PRESTIGE | Excellence à Rabat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700;900&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --red: #C8102E; --gold: #B4975A; --blue: #002349; --light: #f9f9f9; }
+        body { font-family: 'Outfit', sans-serif; margin: 0; background: var(--light); color: var(--blue); overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* Navigation & Logo */
+        nav { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 5px solid var(--red); position: sticky; top: 0; z-index: 1000; }
+        .logo-container { display: flex; align-items: center; text-decoration: none; color: var(--blue); }
+        .logo-icon { background: var(--blue); color: var(--gold); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1.5rem; margin-right: 12px; border: 2px solid var(--gold); }
+        .logo-text { font-family: 'Bodoni Moda', serif; font-size: 1.6rem; font-weight: 900; text-transform: uppercase; line-height: 1; }
+        .logo-text span { color: var(--red); display: block; font-size: 0.9rem; letter-spacing: 3px; }
+
+        /* Hero */
+        .hero { height: 75vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('vieux-chauffeur.jpg.png') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero h1 { font-family: 'Bodoni Moda', serif; font-size: clamp(2.5rem, 8vw, 5rem); margin: 0; }
+        
+        /* Qui Sommes-Nous & Boutons Cliquables */
+        .about { padding: 80px 8%; background: white; }
+        .about-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center; }
+        .about-text h2 { font-family: 'Bodoni Moda'; font-size: 2.5rem; border-left: 5px solid var(--red); padding-left: 20px; }
+        
+        .partners-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+        .tag-btn { background: var(--light); border: 1px solid #ddd; padding: 15px; font-weight: 700; display: flex; align-items: center; text-decoration: none; color: var(--blue); border-radius: 4px; transition: 0.3s; }
+        .tag-btn i { color: var(--red); margin-right: 10px; }
+        .tag-btn:hover { background: var(--blue); color: white; transform: translateX(5px); }
+
+        /* Grille Voitures */
+        section { padding: 80px 8%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-decoration: none; color: inherit; display: block; transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 350px; object-fit: cover; border-bottom: 3px solid var(--red); }
+        .card-body { padding: 25px; text-align: center; }
+        .price { color: var(--red); font-weight: 800; font-size: 1.4rem; }
+
+        /* Footer */
+        footer { background: var(--blue); color: white; padding: 60px 5%; text-align: center; border-top: 5px solid var(--gold); }
+        .btn-wa { background: #25d366; color: white; padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 25px; }
+
+        /* Mode Vintage */
+        #vintage-ui { display: none; background: #050505; color: var(--gold); }
+        .vintage-hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mercedes-vintage.jpg.jpg') center/cover; display: flex; align-items: center; justify-content: center; }
+        
+        .switch-btn { position: fixed; bottom: 30px; right: 30px; width: 70px; height: 70px; background: var(--gold); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; border: 4px solid white; z-index: 9999; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo-container">
+        <div class="logo-icon"><i class="fas fa-crown"></i></div>
+        <div class="logo-text">RIYAD AUTO<span>PRESTIGE</span></div>
+    </a>
+    <a href="tel:0628875855" style="text-decoration:none; color:var(--blue); font-weight:700;"><i class="fas fa-phone"></i> 06 28 87 58 55</a>
+</nav>
+
+<div id="modern-ui">
+    <div class="hero">
+        <h1>L'ÉLITE À RABAT</h1>
+        <p style="letter-spacing:5px; color:var(--gold);">LOCATION DE LUXE</p>
+    </div>
+
+    <section class="about">
+        <div class="about-box">
+            <div class="about-text">
+                <h2>QUI SOMMES-NOUS ?</h2>
+                <p>Spécialiste de la mobilité d'exception à <strong>Hay Riyad</strong>. Nous servons avec prestige :</p>
+                <div class="partners-grid">
+                    <a href="https://wa.me/212628875855" class="tag-btn"><i class="fas fa-hotel"></i> HÔTELS VIP</a>
+                    <a href="https://wa.me/212628875855" class="tag-btn"><i class="fas fa-star"></i> ÉVÉNEMENTS</a>
+                    <a href="https://wa.me/212628875855" class="tag-btn"><i class="fas fa-briefcase"></i> AFFAIRES</a>
+                    <a href="https://wa.me/212628875855" class="tag-btn"><i class="fas fa-crown"></i> DIPLOMATIE</a>
+                </div>
+            </div>
+            <img src="hero.jpg.jpeg" style="width:100%; border-radius:15px;">
+        </div>
+    </section>
+
+    <section>
+        <div class="grid">
+            <a href="https://wa.me/212628875855" class="card">
+                <img src="mustang.jpg.jpeg">
+                <div class="card-body"><h3>Ford Mustang GT</h3><div class="price">1200 DH / Jour</div></div>
+            </a>
+            <a href="https://wa.me/212628875855" class="card">
+                <img src="bmw.jpg.jpeg">
+                <div class="card-body"><h3>BMW M-Sport</h3><div class="price">900 DH / Jour</div></div>
+            </a>
+            <a href="https://wa.me/212628875855" class="card">
+                <img src="camaro.jpg.jpeg">
+                <div class="card-body"><h3>Chevrolet Camaro</h3><div class="price">1300 DH / Jour</div></div>
+            </a>
+        </div>
+    </section>
+</div>
+
+<div id="vintage-ui">
+    <div class="vintage-hero"><h1 style="color:var(--gold);">COLLECTION HÉRITAGE</h1></div>
+    <section>
+        <div class="grid">
+            <a href="https://wa.me/212628875855" class="card" style="background:#111; color:white;">
+                <img src="mercedes.jpg.jpg">
+                <div class="card-body"><h3>Mercedes S-Class</h3><div class="price" style="color:white;">1500 DH</div></div>
+            </a>
+            <a href="https://wa.me/212628875855" class="card" style="background:#111; color:white;">
+                <img src="wedding-car.jpg.jpg">
+                <div class="card-body"><h3>Édition Mariage</h3><div class="price" style="color:white;">Sur Devis</div></div>
+            </a>
+        </div>
+    </section>
+</div>
+
+<div class="switch-btn" onclick="toggleUniverse()"><i class="fas fa-history"></i></div>
+
+<footer>
+    <p>Avenue Al Nakhil, Hay Riyad, Rabat</p>
+    <a href="https://wa.me/212628875855" class="btn-wa"><i class="fab fa-whatsapp"></i> CONTACTER LE 06 28 87 58 55</a>
+</footer>
+
+<script>
+    let isVintage = false;
+    function toggleUniverse() {
+        const mod = document.getElementById('modern-ui');
+        const vin = document.getElementById('vintage-ui');
+        if(!isVintage) { mod.style.display='none'; vin.style.display='block'; isVintage=true; }
+        else { mod.style.display='block'; vin.style.display='none'; isVintage=false; }
+        window.scrollTo(0,0);
+    }
+</script>
+</body>
+</html>
